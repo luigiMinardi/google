@@ -1,0 +1,119 @@
+body {
+    background-color: #202124;
+    color: white;
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Header */
+
+header {
+    padding: .2em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 3em;
+    height: 3em;
+}
+
+header a {
+    color: white;
+    font-size: small;
+    display: inline-block;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerSpacer {
+    padding: .6em;
+}
+
+.dots {
+    filter: invert(98%) sepia(0%) saturate(612%) hue-rotate(281deg) brightness(96%) contrast(91%);
+    width: 1.1em;
+    height: auto;
+}
+
+.circle {
+    width: 2.6em;
+    height: 2.6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle:hover {
+    background-color: #5f636852;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Center */
+
+.positionLogo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+a {
+    color: #8ab4f8;
+}
+
+/* Footer */
+
+footer {
+    background-color: #171717;
+}
+
+footer section {
+    padding: 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1200px) {
+    footer section {
+        justify-content: space-evenly;
+    }
+}
+
+.country {
+    padding: 1em 3em;
+    border-bottom: .1em solid #212327;
+    color: #999da2;
+}
+
+.footerLink {
+    color: #999da2;
+    padding: 1em;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
