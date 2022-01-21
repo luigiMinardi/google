@@ -124,7 +124,7 @@ header section {
     align-items: center;
 }
 
-.searchBox:hover, .searchBox:focus {
+.searchBox:hover, .searchBox:focus, .searchBox:focus-within {
     background-color: #303134;
     border: none;
     box-shadow: 0 0 .4em rgba(0, 0, 0, 0.37);
@@ -140,6 +140,10 @@ header section {
     height: 70%;
     border: none;
     background-color: transparent;
+
+    caret-color: #bdc1c6;
+    font-size: 1.01em;
+    color: white;
 }
 
 .searchBox input:focus {
