@@ -3,6 +3,13 @@ body {
     color: white;
     font-family: arial, sans-serif;
     margin: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a:hover {
@@ -44,7 +51,7 @@ header section {
 }
 
 .headerSpacer {
-    padding: .6em;
+    padding: .5em;
 }
 
 .dots {
@@ -68,17 +75,110 @@ header section {
     cursor: pointer;
 }
 
+.profilePic {
+    border-radius: 50%;
+    width: 2.1em;
+    height: auto;
+}
 
 /* Center */
+
+.center {
+    height: 73.9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .positionLogo {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 2em;
 }
 
-a {
+.positionLogo img {
+    width: 17em;
+    height: auto;
+}
+
+.searchZone {
+    height: 6.5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBox {
+    /* width: 38em; */
+    width: 35em;
+    height: 2.7em;
+    border-radius: 1.5em;
+    border: .1em solid #5f6368;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchBox:hover, .searchBox:focus {
+    background-color: #303134;
+    border: none;
+    box-shadow: 0 0 .4em rgba(0, 0, 0, 0.37);
+}
+
+.searchBox img {
+    width: .9em;
+    padding: 0 1em;
+}
+
+.searchBox input {
+    width: 90%;
+    height: 70%;
+    border: none;
+    background-color: transparent;
+}
+
+.searchBox input:focus {
+    outline: none;
+}
+
+.mag {
+    filter: invert(98%) sepia(0%) saturate(612%) hue-rotate(281deg) brightness(96%) contrast(91%);
+    margin-top: .3em;
+}
+
+.mic {
+    margin-top: .1em;
+}
+
+.button {
+    background-color: #303134;
+
+    padding: .8em 1.2em;
+    border-radius: .4em;
+
+    font-size: .9em;
+    margin: 0 .2em;
+}
+
+.button:hover, .button:focus {
+    border: .1em solid rgb(133, 133, 133);
+    text-decoration: none;
+}
+
+.offered {
+    margin-top: 3em;
+    color: #bdc1c6;
+    font-size: small;
+}
+
+.offered a {
     color: #8ab4f8;
+    padding: 0 .3em;
 }
 
 /* Footer */
