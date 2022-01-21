@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Google</title>
+    <link rel="shortcut icon" href="img/Google.png" type="image/x-icon">
 </head>
 
 <body>
@@ -39,14 +40,14 @@
                 <div>
                     <img class="mag" src="img/find.png" alt="Magnifier">
                 </div>
-                <input type="text">
+                <input id="search" type="text" onkeydown="search(this)">
                 <div>
                     <img class="mic" src="img/mic.svg" alt="Mic">
                 </div>
             </div>
             <div>
-                <a class="button">Google Search</a>
-                <a class="button">I'm Feeling Lucky</a>
+                <a class="button" onclick="searchButton()">Google Search</a>
+                <a class="button" onclick="imLucky()">I'm Feeling Lucky</a>
             </div>
         </div>
         <div class="offered">
@@ -74,6 +75,7 @@
             </div>
         </section>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
